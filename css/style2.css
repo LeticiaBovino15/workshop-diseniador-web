@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700');
+
+*{box-sizing: border-box;
+    
+   /* margin: auto;
+    with: 100%; --- PARA QUE ESTE TODO CENTRADO ---*/
+
+}
+
+html{ 
+    font-size: 62.5%;
+    
+    
+}
+
+nav{
+    align-content: right;
+}
+
+.absolute-transparent {
+    background: none;
+    position:absolute;
+    top: 0;
+    width: 100%;
+    margin: auto;
+    z-index: 999;
+    left: 0;
+    right: 0;
+}
+
+.background-image {
+    margin: auto;
+    width: 100%;
+}
+
+.main-container {
+    clear: both;
+    
+}
+
+.cover {
+    margin: 0;
+    padding: 0;
+}
+.fullscreen {
+    height: 100vh;
+}
+section, footer {
+    padding: 96px 0;
+    position: relative;
+    overflow: hidden;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+
+img {
+    max-width: 100%;
+}
+
