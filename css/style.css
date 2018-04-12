@@ -1,17 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700');
 
 *{box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
     
    /* margin: auto;
     with: 100%; --- PARA QUE ESTE TODO CENTRADO ---*/
 
 }
+ 
+ html{ 
+     font-size: 62.5%;
+     margin: auto;
+}
 
-html{ 
-    font-size: 62.5%;
-    margin: auto;
-    
-    
+hr {
+  border:none;
+  height: 20px;
+ 	width: 90%;
+	height: 50px;
+	margin-top: 0;
+	border-bottom: 1px;
+	box-shadow: 0 20px 20px -20px #cfcdcd;
+  margin: -50px auto 10px; 
 }
 
 nav {
@@ -20,8 +31,6 @@ nav {
     line-height: 8rem;
     width: 100%;
     margin: auto;
-   
-   
 }
 
 .nav {
@@ -30,32 +39,44 @@ nav {
 	list-style: none;
 	display: inline-block;
     position: relative;
-    box-shadow:  2px 2px 5px rgb(153, 153, 153);
+    box-shadow:  2px 2px 5px #cfcdcd;
     z-index: 10000;
-  
-   
-   
+    text-align: center;
 }
 
 .secondary-nav {
+    padding: 0; 
 	position: absolute;
     list-style: none;
-    display: none;
+    display:none;
     left: 0;
-    width: 700%;
-	color: grey;
+    min-width: 10rem;
+    color: grey;
     background-color: white;
-    box-shadow:  2px 2px 5px rgb(153, 153, 153);
+    box-shadow:  2px 2px 5px #cfcdcd;
     text-align: left;
-   
     font-size: 1rem;
-    
     line-height: 2rem;
+    margin:0;
     
+    
+   
+
+}
+
+.secondary-nav li{
+    display:block;
+    text-align: center;
+}
+.image-nav{
+    width: 6rem; 
+    height: 4rem;
+    vertical-align: middle;
 }
 
 #banda {
     position: relative;
+  
    
 }
 
@@ -63,39 +84,6 @@ nav {
 	display: block;
 }
 
-h1 {
-    color: rgb(56, 55, 55);
-    font-size: 4rem;
-    font-weight: 700;
-    font-family:  Roboto;
-    text-align: center;
-  
-}
-
-h2 {
-    color: rgb(209, 219, 63);
-    font-size: 2rem;
-    font-weight: 700;
-    font-family: Roboto;
-    font-style: italic;
-    letter-spacing: 5px;
-     
-
-}
-
-h4 {
-    color: #ffffff;
-    font-family: Roboto;
-    text-transform: uppercase;
-   
-}
-p {
-    color: rgb(88, 88, 79);
-    font-size: 1rem;
-    font-weight: 300;
-    font-family: Roboto;
-    line-height: 20px;
-}
 
 a {
     font-family: Roboto;
@@ -106,78 +94,108 @@ a {
     text-transform: uppercase;
     text-decoration: none;
     color: white;
-
 }
 
 a:hover {
-    color: rgb(209, 219, 63);
+    color:white;
 	text-decoration: underline;
 }
 
 a:visited {
-    color: grey;
+    color: white;
 }
 
-.nav {
-    text-align: center;
+#home{
+
+    background-image: url(img/beatles_copia1.png);
+    border: 1px solid rgb(239, 241, 239);
+    position: relative; 
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-left: 30rem;
+    padding-bottom: 10rem;
+    box-shadow:  2px 2px 5px #cfcdcd;
     
-
-}
-#discography {
-    font-family: Roboto;
-    font-weight: 300;
-
-}
-
-#history{
-    font-family: Roboto;
-    font-weight: 300;
     
-
 }
 
-#about{
-    font-family: Roboto;
-    font-weight: 300;
-    margin-top: 10 rem;
-    background-image: url(.css/img/header.png)
+
+
+h1 {
+    color: white;
+    font-size: 6rem;
+    font-weight: 700;
+    font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+    padding-top: 25rem;
     
-
 }
+
+.boton_personalizado{
+    text-decoration: none;
+    padding: 1rem;
+    font-weight: 400;
+    font-family:  Roboto;
+    font-size: 2rem;
+    color: #ffffff;
+    background-color: none;
+    border-radius: 10px;
+    border: 3px solid white;
+    transition: width 10s;
+ }
+  .boton_personalizado:hover{
+    color: black;
+    background-color: #ffffff;
+    text-decoration: none;
+    width: 300px;
+
+  }
 
 .circle-image {
-	width: 20rem;
-	height: 20rem;
+    width: 15rem;
+	height: 15rem;
 	border-radius: 50%;
 	overflow: hidden;
+	margin: auto;
+	box-shadow: 0 0 1rem #cfcdcd;
+  
+    }
+
+.circle-image2 {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    overflow: hidden;
     margin: auto;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.54);
-    z-index:1;
-    display: inline-block
-    transition: transform 2s linear 1s;
-}
+    box-shadow: 0 0 1rem #cfcdcd;
+      
+    }
 
-.circle:hover {
-    transform: scale(1.2);
-    transition: transform 1s linear;
+.circle-image img {
+    width: 100%;
+    height: 100%;
 
-}
-.column1 {
- 
-    float: left;
-    width: 24%;
-    padding-bottom: 1rem;
-    position: relative;
-    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
-    padding: 1rem 2rem;
-    display: inline-block;
-    font-size: 1.5rem;
-    text-align: justify;
-    
+    }
+
+.circle-image2 img {
+    width: 100%;
+    height: 100%;
     
     }
+
+.column1 {
+    float: left;
+    width: 24%;
+    padding-bottom: 1rem;
+    position: relative;
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    padding: 1rem 2rem;
+    display: inline-block;
+    font-size: 1.5rem;
+    text-align: justify;
+    }
+
 .column2 {
-     
     float: left;
     width: 24%;
     padding-bottom: 1rem;
@@ -188,24 +206,10 @@ a:visited {
     color: #222324;
     font-size: 1.5rem;
     text-align: justify;
-         
-         }
+    }
+
 .column3 {
-    
     float: left;
-    width: 24%;
-    padding-bottom: 1rem;
-    position: relative;
-    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
-    padding: 1rem 2rem;
-    display: inline-block;
-    color: #222324;
-    font-size: 1.5rem;
-    text-align: justify;
-             
-             }
-.column4 {
-    
     width: 24%;
     padding-bottom: 1rem;
     position: relative;
@@ -216,25 +220,227 @@ a:visited {
     font-size: 1.5rem;
     text-align: justify;
                  
-                 }
+    }
 
-.white-text{
-    color: #0c0b0b;
+.column4 {
+    float: left;    
+    width: 24%;
+    padding-bottom: 1rem;
+    position: relative;
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    padding: 1rem 2rem;
+    display: inline-block;
+    color: #222324;
+    font-size: 1.5rem;
+    text-align: justify;
+                     
+    }
+
+
+
+
+    
+h2{
     text-align: center;
-    font-weight: 700;
+    font-size: 5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:grey;
+}
+
+h4{
+    text-align: center;
     font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:grey;
 }
+    
 
-.image-nav{
-    width: 5rem; 
-    height: 3rem;
-    vertical-align: middle;
+
+p {
+    color: grey;
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-family: Roboto;
+    line-height: 17px;
+    margin: 3rem;
+    text-align: center;
 }
-
-
 
 .cleaner {
-   clear: both;
+    clear: both;
+    }
+
+#liverpool{
+   
+    color: black;
+    font-weight: 700;
+    }
+
+    .fond{
+        position:absolute;
+        padding-top:115rem;
+        top:0;
+        left:0; 
+        right:0;
+        bottom:0;}
+       
+       .style_prevu_kit
+       {
+           display:inline-block;
+           border:0;
+           width:196px;
+           height:210px;
+           position: relative;
+           -webkit-transition: all 200ms ease-in;
+           -webkit-transform: scale(1); 
+           -ms-transition: all 200ms ease-in;
+           -ms-transform: scale(1); 
+           -moz-transition: all 200ms ease-in;
+           -moz-transform: scale(1);
+           transition: all 200ms ease-in;
+           transform: scale(1);   
+       
+       }
+       .style_prevu_kit:hover
+       {
+           box-shadow: 0px 0px 150px #000000;
+           z-index: 2;
+           -webkit-transition: all 200ms ease-in;
+           -webkit-transform: scale(1.5);
+           -ms-transition: all 200ms ease-in;
+           -ms-transform: scale(1.5);   
+           -moz-transition: all 200ms ease-in;
+           -moz-transform: scale(1.5);
+           transition: all 200ms ease-in;
+           transform: scale(1.5);
+       }
+
+#text-fond{
+    color:white;
 }
 
+
+#text-fond-p{
+    color:white;
+    font-size: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+}
+
+form{
+    padding-left:11rem;
+}
+  form header {
+    margin: 0 0 20px 0; 
+  }
+  form header div {
+    font-size: 90%;
+    color: #999;
+  }
+  form header h2 {
+    margin: 0 0 5px 0;
+  }
+  form > div {
+    clear: both;
+    overflow: hidden;
+    padding: 1px;
+    margin: 0 0 10px 0;
+  }
+  form > div > fieldset > div > div {
+    margin: 0 0 5px 0;
+  }
+  form > div > label,
+  legend {
+      width: 25%;
+    float: left;
+    padding-right: 10px;
+  }
+  form > div > div,
+  form > div > fieldset > div {
+    width: 75%;
+    float: right;
+  }
+  form > div > fieldset label {
+      font-size: 90%;
+  }
+  fieldset {
+      border: 0;
+    padding: 0;
+  }
+  
+  input[type=text],
+  input[type=email],
+  input[type=url],
+  input[type=password],
+  textarea {
+      width: 55%;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+  }
+  input[type=text],
+  input[type=email],
+  input[type=url],
+  input[type=password] {
+    width: 55%;
+  }
+  input[type=text]:focus,
+  input[type=email]:focus,
+  input[type=url]:focus,
+  input[type=password]:focus,
+  textarea:focus {
+    outline: 0;
+    border-color: #4697e4;
+  }
+  
+  @media (max-width: 600px) {
+    form > div {
+      margin: 0 0 15px 0; 
+    }
+    form > div > label,
+    legend {
+        width: 100%;
+      float: none;
+      margin: 0 0 5px 0;
+    }
+    form > div > div,
+    form > div > fieldset > div {
+      width: 100%;
+      float: none;
+    }
+    input[type=text],
+    input[type=email],
+    input[type=url],
+    input[type=password],
+    textarea,
+    select {
+      width: 100%; 
+    }
+  }
+  @media (min-width: 1200px) {
+    form > div > label,
+      legend {
+        text-align: right;
+    }
+  }
+
+.desc{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: grey;
+    font-size:1.3rem;
+    font-weight: 700;
+}
+
+#saveForm{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    background-color: grey;
+    width: 55%;
+    
+}
+
+#Field106{
+    width: 55%;
+}
 
