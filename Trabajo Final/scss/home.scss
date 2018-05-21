@@ -1,0 +1,50 @@
+main {
+	margin-top: 8rem;
+}
+
+#home {
+	background-image: url('../img/beatles_copia1.png');
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-top: -8rem;
+	height: 20rem;
+	padding: 0;
+	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.54);
+}
+
+#home article {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+}
+
+.arrow-down {
+	color: rgba(0, 0, 0, 0.87);
+	height: 5rem;
+	width: 5rem;
+	cursor: pointer;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(255, 255, 255, 0.9);
+	border-radius: 50%;
+	margin: 2rem;
+	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.54);
+	opacity: 1;
+	font-size: 0.5rem;
+	transition: transform 0.5s ease;
+}
+
+.arrow-down:hover {
+	transform: scale(1.1);
+	transition: transform 0.8s ease;
+}
+
+#white-text{
+    color:white !important;
+}
